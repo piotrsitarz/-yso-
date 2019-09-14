@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8fdf9;
+}
+
+.footer-primary {
+  background: #eac12d;
+  height: 100px;
+}
+
+.footer-primary__container,
+.footer-secondary__container {
+  max-width: 1173px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.footer-secondary__container {
+  justify-content: space-between;
+}
+
+.footer-primary__item {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-primary__item--last {
+  justify-content: flex-start;
+  position: relative;
+  left: 25px;
+}
+
+.footer-primary__icon {
+  fill: white;
+  height: 47px;
+}
+
+.footer-primary__text,
+.footer-secondary__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-primary__text--secure {
+  left: -4px;
+}
+
+.footer-primary__text--refund {
+  left: 15px;
+}
+
+.footer-primary__text--gap {
+  left: 6px;
+}
+
+.footer-primary__paragraph {
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-primary__paragraph--description {
+  font-size: 10px;
+  text-transform: lowercase;
+  font-family: 'Metropolis';
+}
+
+.footer-primary__line {
+  stroke: white;
+  stroke-width: 2;
+  width: 21px;
+  position: absolute;
+}
+
+.footer-primary__line--first {
+  left: calc(25% - 10.5px);
+}
+
+.footer-primary__line--second {
+  left: calc(50% - 10.5px);
+}
+
+.footer-primary__line--third {
+  left: calc(75% - 10.5px);
+}
+
+.footer-secondary {
+  background: #404040;
+  height: auto;
+}
+
+.footer-secondary__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.footer-secondary__paragraph {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Metropolis';
+  color: white;
+  line-height: 0.72;
+  margin-bottom: 16px;
+}
+
+.footer-secondary__paragraph--description {
+  font-size: 15px;
+  text-transform: unset;
+  line-height: 1.333;
+  margin-bottom: 0px;
+}
+
+.footer-secondary__socials {
+  width: 100%;
+}
+
+.footer-secondary__icon {
+  height: 30px;
+  fill: white;
+}
+
+.footer-secondary__icon--big {
+  height: 32px;
+}
+
+.footer-secondary__icon--gap {
+  position: relative;
+  top: -1px;
+}
+
+.footer-secondary__contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -4px;
+}
+
+.contact__icon {
+  fill: white;
+  width: 46px;
+}
+
+.contact__paragraph {
+  font-size: 22px;
+  font-family: 'Metropolis';
+  color: white;
+  line-height: 0.818;
+}
+
+.contact__paragraph--small {
+  font-size: 15px;
+  line-height: 1.333;
+}
+
+._2003___2016_©_oryginalneprezenty_pl___Korzystan {
+  font-size: 13px;
+  font-family: 'Metropolis';
+  color: rgb(255, 255, 255);
+  line-height: 1.385;
+  text-align: left;
+  position: absolute;
+  left: 364.982px;
+  top: 2240.879px;
+  z-index: 15;
+}
+
+.footer-secondary__hr {
+  background-image: linear-gradient(to right,
+      rgba(100, 100, 100, 0),
+      rgba(100, 100, 100, 1),
+      rgba(100, 100, 100, 0));
+  width: 100%;
+  height: 1px;
+  margin: 44px 0 28px;
+}
+
+.footer-copyright__container {
+  display: flex;
+  width: 100%;
+}
+
+.copyright__item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-bottom: 28px;
+}
+
+.copyright__paragraph {
+  font-size: 13px;
+  font-family: 'Metropolis';
+  color: white;
+  line-height: 1.385;
+}
+
+.footer-cookies__container {
+  border-top: 3px solid rgb(234, 193, 45);
+  background-color: rgb(255, 255, 255);
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-cookies__icon {
+  height: 35px;
+  fill: #404040;
+}
+
+.footer-cookies__paragraph {
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+}
+
+.footer-cookies__paragraph--bold {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #d4d4d4;
+}
+
+.footer-cookies__button {
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  background: #eac12d;
+  padding: 6px 15px;
+  margin-left: 25px;
+}
+
+.footer-cookies__button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-primary__item {
+    width: 50%;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .footer-primary__container {
+    flex-wrap: wrap;
+  }
+
+  .footer-primary {
+    height: auto;
+  }
+
+  .footer-primary__line--first,
+  .footer-primary__line--third {
+    display: none;
+  }
+
+  .footer-primary__line--second {
+    top: 21px;
+  }
+
+  .footer-primary__text {
+    align-items: center;
+  }
+
+  .footer-primary__text--secure {
+    left: 0;
+  }
+
+  .footer-primary__item--last {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-primary__line--second {
+    display: none;
+  }
+}
