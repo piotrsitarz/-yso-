@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
+
 body {
   background: #f8fdf9;
 }
