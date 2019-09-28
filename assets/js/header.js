@@ -1,34 +1,33 @@
-jQuery(function($) {
+jQuery(function ($) {
   // wyszukiwanie produktów
 
-  var allProducts = [
-    {
-      imgSrc: 'assets/images/product-option.jpg',
+  var allProducts = [{
+      imgSrc: 'assets/images/product-option.webp',
       title: 'balsam do ciała biała fantazja 200g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.jpg',
+      imgSrc: 'assets/images/product-option.webp',
       title: 'olejek do ciała biała fantazja 200g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.jpg',
+      imgSrc: 'assets/images/product-option.webp',
       title: 'świeca z wosku 200g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.jpg',
+      imgSrc: 'assets/images/product-option.webp',
       title: 'mleczko pszczele 400g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.jpg',
+      imgSrc: 'assets/images/product-option.webp',
       title: 'mleczko pszczele 100g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.jpg',
+      imgSrc: 'assets/images/product-option.webp',
       title: 'mleczko pszczele 500g',
       price: '56,90 zł'
     }
@@ -75,35 +74,36 @@ jQuery(function($) {
 
   const getSearchingProductsOptionsList = searchingProduct => {
     searchingProduct
-      ? searchingProductsOptionsList(
-          allProducts.filter(product =>
-            product.title.toLowerCase().includes(searchingProduct.toLowerCase())
-          )
+      ?
+      searchingProductsOptionsList(
+        allProducts.filter(product =>
+          product.title.toLowerCase().includes(searchingProduct.toLowerCase())
         )
-      : searchingProductsOptionsList(allProducts.slice(0, 3));
+      ) :
+      searchingProductsOptionsList(allProducts.slice(0, 3));
   };
 
   $('.header-search__input')
-    .focus(function(e) {
+    .focus(function (e) {
       const searchingProduct = e.target.value;
       if (!showAllSearchingProductsOptionsActivated) {
         showSearchingProductsOptions();
         getSearchingProductsOptionsList(searchingProduct);
       }
     })
-    .blur(function() {
+    .blur(function () {
       hideSearchingProductsOptions();
       showAllSearchingProductsOptionsActivated = false;
     });
 
-  $(document).on('click', '.header-search__input-paragraph--all', function() {
+  $(document).on('click', '.header-search__input-paragraph--all', function () {
     showSearchingProductsOptions();
     searchingProductsOptionsList(allProducts);
     showAllSearchingProductsOptionsActivated = true;
     $('.header-search__input').focus();
   });
 
-  $('.header-search__input').keyup(function(e) {
+  $('.header-search__input').keyup(function (e) {
     const searchingProduct = e.target.value;
     $('.header-search__input-options').empty();
     getSearchingProductsOptionsList(searchingProduct);
@@ -112,7 +112,7 @@ jQuery(function($) {
   // rozwijane menu produktów
 
   $('.header-products__item').on({
-    mouseenter: function(e) {
+    mouseenter: function (e) {
       const width = $(window).width();
       const itemPositionX = e.pageX;
       if (width / 2 > itemPositionX) {
@@ -123,7 +123,7 @@ jQuery(function($) {
         $('.products-list__image').addClass('products-list__image--first');
       }
     },
-    mouseleave: function() {
+    mouseleave: function () {
       $('.header-products__list').removeClass('header-products__list--left');
       $('.header-products__list').removeClass('header-products__list--right');
       $('.products-list__image').removeClass('products-list__image--second');
@@ -132,7 +132,7 @@ jQuery(function($) {
     }
   });
 
-  $('.header-products__item').click(function() {
+  $('.header-products__item').click(function () {
     const productsCategoriesToggleContainer = $(this).children(
       '.header-products__list--mobile'
     );
@@ -156,7 +156,7 @@ jQuery(function($) {
   });
 
   $('.products-list__name').on({
-    mouseenter: function() {
+    mouseenter: function () {
       const width = $(window).width();
       if (width >= 1173) {
         $('.products-list__image').addClass('products-list__image--show');
@@ -165,7 +165,7 @@ jQuery(function($) {
     }
   });
 
-  $('.header-products__category').click(function() {
+  $('.header-products__category').click(function () {
     $('.header-products__container').slideToggle();
     const productsCategoriesToggle = $('.header-products__title--plus').text();
 
