@@ -1,0 +1,80 @@
+.order__container {
+    max-width: 1173px;
+    margin: 0 auto;
+}
+
+.order__details {
+    width: 560px;
+    margin: 0 auto;
+}
+
+.order__title {
+    font-size: 25px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    margin: 30px 0 20px;
+}
+
+.order__divider {
+    height: 1px;
+    width: 95%;
+    margin: 0 auto 50px;
+    background: #dcdbdd;
+}
+
+.order__subtitle {
+    font-size: 20px;
+    font-family: "Metropolis";
+    color: rgb(97, 97, 97);
+}
+
+.order__subtitle--id {
+    text-transform: uppercase;
+    color: rgb(234, 193, 45);
+}
+
+.order__description {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(97, 97, 97);
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.order__button {
+    font-size: 20px;
+    font-family: "Metropolis";
+    color: rgb(251, 253, 250);
+    font-weight: bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 260px;
+    height: 45px;
+    border: 1px solid rgb(234, 193, 45);
+    border-radius: 999px;
+    background: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 1200px;
+    background: rgb(234, 193, 45);
+}
+
+.order__button:hover {
+    color: rgb(234, 193, 45);
+    background: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1173px) {
+    .order__title {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .order__details {
+        width: 90%;
+    }
+}
