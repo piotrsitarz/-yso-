@@ -2,32 +2,32 @@ jQuery(function ($) {
   // wyszukiwanie produktów
 
   var allProducts = [{
-      imgSrc: 'assets/images/product-option.webp',
+      imgSrc: 'assets/images/default-image.webp',
       title: 'balsam do ciała biała fantazja 200g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.webp',
+      imgSrc: 'assets/images/default-image.webp',
       title: 'olejek do ciała biała fantazja 200g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.webp',
+      imgSrc: 'assets/images/default-image.webp',
       title: 'świeca z wosku 200g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.webp',
+      imgSrc: 'assets/images/default-image.webp',
       title: 'mleczko pszczele 400g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.webp',
+      imgSrc: 'assets/images/default-image.webp',
       title: 'mleczko pszczele 100g',
       price: '56,90 zł'
     },
     {
-      imgSrc: 'assets/images/product-option.webp',
+      imgSrc: 'assets/images/default-image.webp',
       title: 'mleczko pszczele 500g',
       price: '56,90 zł'
     }
