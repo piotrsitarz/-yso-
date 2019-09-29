@@ -1,3 +1,5 @@
+// lazy loading wszystkich zdjec, ktore nie sa obsluzone przez lazy loading slicka / nie sa w sliderze
+
 let lazyImages = [...document.querySelectorAll('.lazy-image')]
 let inAdvance = 300
 

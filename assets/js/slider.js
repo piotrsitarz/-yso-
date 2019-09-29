@@ -66,6 +66,8 @@ jQuery(function ($) {
         $(".slider-products__container--bestsellers").slick('slickPrev');
     });
 
+    //zmiana styli po najechaniu na karte produktu
+
     $('.slider-product__card').on({
         mouseenter: function () {
             $(this).children('.slider-product__price').addClass('slider-product__price--hovered');

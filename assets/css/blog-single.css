@@ -1,0 +1,717 @@
+.blog__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.blog-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.blog__title {
+    font-size: 30px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 25px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.blog__title--sidebar {
+    font-size: 18px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    padding: none;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.blog__title--sidebar:not(:first-child) {
+    margin-top: 35px;
+}
+
+.blog-sidebar {
+    width: 285px;
+    padding-right: 20px;
+    border-right: 1px solid #e8e8e8;
+}
+
+.blog-sidebar__item {
+    width: 288px;
+    display: flex;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px 0 40px;
+
+}
+
+.blog-sidebar__item:hover {
+    cursor: pointer;
+}
+
+.blog-sidebar__item--instagram {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+}
+
+.blog-sidebar__image-container {
+    height: 85px;
+    width: 85px;
+}
+
+.blog-sidebar__item--instagram .blog-sidebar__image-container {
+    margin-bottom: 10px;
+}
+
+.blog-sidebar__image {
+    height: 100%;
+    width: 100%;
+}
+
+
+.blog-sidebar__details {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 85px);
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.sidebar-details__title {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(46, 46, 46);
+    font-weight: 500;
+}
+
+.sidebar-details__comment {
+    font-size: 11px;
+    font-family: "Metropolis";
+    color: rgb(164, 164, 164);
+}
+
+.sidebar-details__comment--margin {
+    margin-bottom: 10px;
+}
+
+.sidebar-details__price--margin {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(234, 193, 45);
+}
+
+.sidebar-details__star-icon {
+    height: 10px;
+}
+
+.article__star-icon {
+    width: 30px;
+}
+
+.blog-article {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.blog-article__pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles-pagination__source {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.articles-pagination__icon {
+    height: 30px;
+}
+
+.articles-pagination__paragraph {
+    font-size: 18px;
+    font-family: "Metropolis";
+    color: rgb(64, 64, 64);
+}
+
+.article-item__date {
+    width: 50px;
+    height: 65px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.article-item__day {
+    font-size: 27px;
+    font-family: "Metropolis";
+    color: rgb(234, 193, 45);
+    font-weight: bold;
+}
+
+.article-item__month {
+    font-size: 12px;
+    color: rgb(64, 64, 64);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.article__image-container {
+    position: relative;
+}
+
+.article__content {
+    background: white;
+    box-shadow: 0 0 3px #dcdbdd;
+    margin-top: 30px;
+    padding: 0 25px 30px;
+}
+
+.article__description {
+    font-size: 16px;
+    font-family: "Metropolis";
+    color: rgb(64, 64, 64);
+    margin-top: 30px;
+    line-height: 1.563;
+}
+
+.article__description--second {
+    margin-top: 35px;
+}
+
+.article__image {
+    width: calc(100% + 50px);
+    position: relative;
+    left: -25px;
+}
+
+.article__title {
+    font-size: 25px;
+    font-family: "Metropolis";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    left: 20;
+    bottom: 25px;
+}
+
+.article__title--black {
+    color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.article__title--medium {
+    font-size: 20px;
+    color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.article-products__container {
+    display: flex;
+    margin: 35px 0 50px;
+}
+
+.article-product__card {
+    border: 1px solid #dcdbdd;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 0 3px #dcdbdd;
+    position: relative;
+    width: 33%;
+    margin: 0 10px;
+}
+
+.article-product__card:hover {
+    cursor: pointer;
+}
+
+.slick-slide {
+    margin: 25px;
+}
+
+.article-product__discount {
+    background: #378d20;
+    font-size: 16px;
+    line-height: 0.573;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 7px 13px;
+    margin-left: -30px;
+    left: 50%;
+    z-index: 2;
+}
+
+.article-product__image {
+    position: relative;
+    padding: 10px;
+}
+
+.article-product__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.article-product__details {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    border-bottom: 1px solid #ebebeb;
+    justify-content: center;
+}
+
+.article-product__details-hover {
+    display: none;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.article-product__details--row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article-product__image-hover .article-product__description,
+.article-product__image-hover .article-product__title {
+    color: white;
+}
+
+.article-product__image-hover .article-product__title {
+    margin-top: 12px;
+}
+
+.article-product__image-hover .product__price {
+    margin-bottom: 10px;
+}
+
+.article-product__title {
+    font-size: 21px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.article-product__description {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.article-product__details--show {
+    display: flex;
+}
+
+.product-details__icons {
+    height: 100%;
+}
+
+.product-details__icons {
+    display: flex;
+    align-items: center;
+}
+
+.product-details__icon {
+    width: 27px;
+}
+
+.product-details__divider {
+    height: 30px;
+    width: 1px;
+    background: #dcdbdd;
+    margin: 0 12px;
+}
+
+.product-details__select {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(64, 64, 64);
+    width: 130px;
+    padding: 7px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: calc(100% - 20px) center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.article-product__price {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.article-product__price--hovered {
+    background: rgb(234, 193, 45);
+}
+
+.product__price {
+    font-size: 35px;
+    font-family: "Metropolis";
+    color: rgb(234, 193, 45);
+}
+
+.product__price--old {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(145, 145, 145);
+    text-decoration: line-through;
+}
+
+.product__basket {
+    display: flex;
+    font-size: 18px;
+    font-family: "Metropolis";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.article-product-price--hover {
+    display: none;
+}
+
+.product__basket--show {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product__basket-icon {
+    width: 40px;
+    fill: white;
+    display: flex;
+}
+
+.article-product__image-hover {
+    height: 100px;
+    position: absolute;
+    bottom: 14px;
+    width: calc(100% - 20px);
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.blog__container img.lazy-image {
+    opacity: 0.1;
+    will-change: opacity;
+    transition: all 0.3s;
+}
+
+.blog__container img.lazy-image.loaded {
+    opacity: 1;
+}
+
+.article__rating {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: 0 0 3px #dcdbdd;
+    margin-top: 20px;
+    padding: 12px 0;
+}
+
+.article__stars {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.article__paragraph {
+    font-size: 12px;
+    font-family: "Metropolis";
+    color: rgb(143, 143, 143);
+}
+
+.article__divider {
+    width: calc(100% + 1px);
+    background: #e8e8e8;
+    height: 1px;
+    margin: 65px 0 35px;
+}
+
+.blog-articles__item {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 24px;
+    box-shadow: 0 0 3px #dcdbdd;
+}
+
+.articles-item__image,
+.articles-item__details {
+    width: 100%;
+}
+
+.articles-item__image {
+    position: relative;
+}
+
+.articles-item__date {
+    width: 50px;
+    height: 65px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.articles-item__day {
+    font-size: 27px;
+    font-family: "Metropolis";
+    color: rgb(234, 193, 45);
+    font-weight: bold;
+}
+
+.articles-item__month {
+    font-size: 12px;
+    color: rgb(64, 64, 64);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.articles-item__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.articles-item__paragraph {
+    font-size: 25px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.articles-item__paragrap--description {
+    font-size: 14px;
+    color: rgb(64, 64, 64);
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.articles-item__button {
+    font-size: 14px;
+    font-family: "Metropolis";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background: rgb(234, 193, 45);
+    width: 155px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(234, 193, 45);
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.articles-item__button:hover {
+    color: rgb(234, 193, 45);
+    background: white;
+    cursor: pointer;
+}
+
+.article-image {
+    height: 100%;
+    width: 100%;
+}
+
+.blog__container img.lazy-image,
+.blog-articles img.lazy-image {
+    opacity: 0.1;
+    will-change: opacity;
+    transition: all 0.3s;
+}
+
+.blog__container img.lazy-image.loaded,
+.blog-articles img.lazy-image.loaded {
+    opacity: 1;
+}
+
+.articles__container {
+    display: flex;
+}
+
+@media screen and (max-width: 1105px) {
+
+    .blog-articles,
+    .blog-sidebar {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-sidebar {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-right: none;
+        justify-content: space-between;
+        border-right: none;
+    }
+
+    .blog-sidebar__item {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .blog-sidebar__item--instagram {
+        margin: 0 auto;
+    }
+
+    .blog-articles__pagination {
+        margin-top: 40px;
+    }
+
+    .blog-articles__pagination--bottom {
+        margin-top: 20px;
+    }
+
+    .articles-item__image,
+    .articles-item__details {
+        width: 100%;
+    }
+
+    .articles-item__details {
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width: 1173px) {
+
+    .blog-article,
+    .blog-sidebar {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+
+    .blog-article,
+    .blog-sidebar {
+        padding: 0 20px;
+    }
+
+    .article-product__card:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-sidebar {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-right: none;
+        justify-content: space-between;
+        border-right: none;
+    }
+
+    .blog-sidebar__item {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .blog-sidebar__item--instagram {
+        margin: 0 auto;
+    }
+
+    .blog-article__pagination {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .slider__paragraph {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .articles__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-articles__item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .blog-sidebar {
+        justify-content: center;
+    }
+
+    .article-products__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-product__card {
+        width: 50%;
+    }
+
+    .article-product__card:first-child {
+        margin-bottom: 40px;
+    }
+
+    .blog-articles__item {
+        flex-direction: column;
+    }
+
+    .articles-item__details {
+        padding: 20px 0;
+    }
+
+    .articles-item__details * {
+        margin-left: 10px;
+    }
+
+    .blog-articles__item {
+        width: 90%;
+    }
+}

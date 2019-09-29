@@ -30,6 +30,7 @@
     padding: none;
     margin: 0;
     text-transform: uppercase;
+    margin-left: 20px;
 }
 
 .blog__title--sidebar:not(:first-child) {
@@ -294,6 +295,7 @@
 
     .blog-sidebar__item {
         margin-right: 20px;
+        margin-left: 20px;
     }
 
     .blog-sidebar__item--instagram {

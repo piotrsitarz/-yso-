@@ -1,4 +1,5 @@
 jQuery(function ($) {
+
   // wyszukiwanie produktów
 
   var allProducts = [{
