@@ -1,0 +1,41 @@
+.privacy__container {
+    max-width: 1123px;
+    margin: 0 auto;
+}
+
+.privacy__divider {
+    height: 1px;
+    width: 100%;
+    margin: 0 auto 50px;
+    background: #dcdbdd;
+}
+
+.privacy__title {
+    font-size: 30px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+
+.privacy__paragraph {
+    font-size: 17px;
+    font-family: "Metropolis";
+    color: rgb(86, 86, 86);
+    line-height: 1.412;
+    margin-top: 30px;
+}
+
+.privacy__paragraph--bold {
+    font-weight: bold;
+}
+
+.privacy__container p:last-child {
+    margin-bottom: 550px;
+}
+
+@media screen and (max-width: 1123px) {
+    .privacy__container {
+        padding: 0 20px;
+    }
+}
