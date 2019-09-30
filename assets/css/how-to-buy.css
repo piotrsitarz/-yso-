@@ -1,0 +1,41 @@
+.guide__container {
+    max-width: 1123px;
+    margin: 0 auto;
+}
+
+.guide__divider {
+    height: 1px;
+    width: 100%;
+    margin: 0 auto 50px;
+    background: #dcdbdd;
+}
+
+.guide__title {
+    font-size: 30px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+
+.guide__paragraph {
+    font-size: 17px;
+    font-family: "Metropolis";
+    color: rgb(86, 86, 86);
+    line-height: 1.412;
+    margin-top: 35px;
+}
+
+.guide__container p:last-child {
+    margin-bottom: 1150px;
+}
+
+.guide__container p:nth-child(2) {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1123px) {
+    .guide__container {
+        padding: 0 20px;
+    }
+}
