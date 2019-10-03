@@ -1691,8 +1691,8 @@
 		<p class="about__paragraph">
 			Jako firma dbamy również o edukację najmłodszych. Od roku 2013 prowadzimy wykłady w przedszkolach o tematyce pszczelarskiej. Ma to na celu zwiększenie świadomośći dzieci co możemy zyskać dzięki stosowaniu naturalnych i zdrowych produktów oraz jak ważne w naszym życiu są pszczoły.
 		</p>
-		<img class="about__image"
-			src="assets/images/iframe.webp" alt="about iframe">
+		<img class="about__image lazy-image"
+		data-src="assets/images/iframe.webp" alt="about iframe">
 		<div class="mask"></div>
 		<div class="modal">
 			<iframe class="about__iframe" src="https://www.youtube.com/embed/2J_LUYsFVns"></iframe>
@@ -2811,10 +2811,12 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
     <script src="assets/js/header.js"></script>
 	<script src="assets/js/footer.js"></script>
 	<script src="assets/js/modal.js"></script>
+	<script src="assets/js/lazy-load.js"></script>
 </body>
 
 </html>
