@@ -1,4 +1,4 @@
-//modale
+// google maps
 
 jQuery(function ($) {
     function myMap() {
@@ -189,6 +189,5 @@ jQuery(function ($) {
         };
         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
-    myMap();
+    setTimeout(myMap, 301);
 });
-
