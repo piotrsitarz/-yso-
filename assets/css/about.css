@@ -142,6 +142,16 @@
   transform: translateY(0);
 }
 
+.img.lazy-image {
+  opacity: 0.1;
+  will-change: opacity;
+  transition: all 0.3s;
+}
+
+img.lazy-image.loaded {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1240px) {
   .modal {
     width: 90%;
