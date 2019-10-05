@@ -123,6 +123,10 @@
   padding: 28px 0;
 }
 
+.contact__shops-item:hover {
+  cursor: pointer;
+}
+
 .contact__shops-icon {
   height: 60px;
   fill: white;
@@ -159,7 +163,7 @@
   flex-direction: column;
 }
 
-input {
+.contact__input {
   width: 530px;
   height: 30px;
   border: 1px solid rgb(86, 86, 86);
@@ -167,7 +171,7 @@ input {
   margin-top: 25px;
 }
 
-input::placeholder {
+.contact__input::placeholder {
   font-size: 15px;
   font-family: "Metropolis";
   color: rgb(136, 136, 136);
@@ -176,7 +180,7 @@ input::placeholder {
   padding-left: 12px;
 }
 
-.contact__question {
+.contact__input--big {
   height: 150px;
   margin-bottom: 25px;
 }
@@ -279,7 +283,7 @@ input::placeholder {
 } 
 
 @media screen and (max-width: 800px) {
-  input {
+  .contact__input {
     width: 90%;
   }
 
