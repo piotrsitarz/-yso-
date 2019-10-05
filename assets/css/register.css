@@ -205,9 +205,5 @@ img.lazy-image.loaded {
         padding-right: 0;
         border: none;
     }
-
-    .register__column:nth-child(2) {
-        margin-left: 0;
-    }
 }
 
