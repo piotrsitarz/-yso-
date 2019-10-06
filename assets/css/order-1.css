@@ -1,0 +1,367 @@
+.order__container {
+    max-width: 1129px;
+    margin: 50px auto 1300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.order__steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.order__step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.order__divider {
+    height: 1px;
+    width: 100%;
+    margin: 20px 0 30px;
+    background: #dcdbdd;
+}
+
+.order__divider--steps {
+    height: 2px;
+    margin: 0;
+    width: 510px;
+    position: absolute;
+    top: 17px;
+}
+
+.step__icon {
+    width: 38px;
+    fill: #1E1E1C;
+}
+
+.step__icon--active {
+    fill: rgb(234, 193, 45);
+}
+
+.step__paragraph {
+    font-size: 16px;
+    font-family: "Metropolis";
+    color: rgb( 148, 148, 148 );
+    margin-top: 8px;
+}
+
+.order__forms {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.order__form {
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order__form:nth-child(2) {
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.order__title {
+    font-size: 30px;
+    font-family: "Metropolis";
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.order__icon {
+    fill: white;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.order__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.order__button {
+    font-size: 13px;
+    font-family: "Metropolis";
+    color: rgb( 255, 255, 255 );
+    line-height: 1.2;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(234, 193, 45);
+    border-radius: 999px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(234, 193, 45);
+    margin-top: 15px;
+}
+
+.order__button--medium {
+    width: 270px;
+}
+
+.order__button--reverse {
+    color: rgb(234, 193, 45);
+    background: white;
+}
+
+.order__button:hover {
+    color: rgb(234, 193, 45);
+    background: white;
+    cursor: pointer;
+}
+
+.order__button--reverse:hover {
+    background: rgb(234, 193, 45);
+    color: white;
+}
+
+.order__button:hover .order__icon {
+    fill: rgb(234, 193, 45);
+}
+
+.bold {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.input__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__input {
+    width: 48%;
+    height: 30px;
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.order__input::placeholder {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(136, 136, 136);
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.order__input--wide {
+    width: 100%;
+}
+
+.order__subtitle {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb( 86, 86, 86 );
+    line-height: 1.2;
+}
+
+.order__paragraph {
+    font-size: 11px;
+    font-family: "Metropolis";
+    color: rgb( 86, 86, 86 );
+    line-height: 1.636;
+}
+
+.order__paragraph--terms {
+    line-height: 1.385;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.order__checkbox--container {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.order__image {
+    width: 292px;
+    height: 73px;
+    margin: 10px 0 18px;
+}
+
+.img.lazy-image {
+    opacity: 0.1;
+    will-change: opacity;
+    transition: all 0.3s;
+}
+
+img.lazy-image.loaded {
+    opacity: 1;
+}
+
+.captcha__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px;
+}
+
+textarea {
+    font-size: 15px;
+    font-family: "Metropolis";
+    color: rgb(136, 136, 136);
+    text-transform: uppercase;
+    text-align: left;
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 5px;
+    height: 140px;
+    width: calc(100% - 20px);
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.search-company__icon-container {
+    width: 100%;
+    position: relative;
+}
+
+.search-company__icon {
+    height: 30px;
+    fill: #adadad;
+    stroke: #adadad;
+    position: absolute;
+    top: 26px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.login__tooltip {
+    position: relative;
+    width: 100%;
+}
+
+.bottom {
+    width: 150px;
+    top: 4px;
+    left: 352px;
+    padding:5px 10px;
+    background-color:#666b6e;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    display:none;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.search-company__icon:hover ~ .bottom {
+    display: block;
+}
+
+.bottom i {
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+
+.bottom i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(45deg);
+    background-color:#666b6e;
+}
+
+.login__tooltip-list {
+    margin-top: 24px;
+    padding-left:20px;
+}
+
+.bottom__paragraph {
+    font-size: 14px;
+    font-family: "Metropolis";
+    color: rgb( 255, 255, 255 );
+    line-height: 1.286;
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 970px) {
+    .order__container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .order__steps {
+        width: 100%;
+    }
+
+    .order__step, .order__divider--steps {
+        display: none;
+    }
+
+    .order__step {
+        width: 100%;
+    }
+
+    .order__step--active {
+        display: flex;
+    }
+
+    .step__icon--active {
+        width: 70px;
+    }
+
+    .step__paragraph {
+        font-size: 20px;
+    }
+
+    .order__forms {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .order__button--medium {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .order__button--medium {
+        width: 230px;
+    }
+
+    .order__form {
+        width: 95%;
+    }
+
+    .captcha__container, .order__buttons {
+        flex-direction: column;
+    }
+}
