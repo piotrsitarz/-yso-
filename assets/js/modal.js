@@ -5,6 +5,10 @@ jQuery(function ($) {
     $('.mask').addClass('active');
   });
 
+  $('.open-modal').on('click', function () {
+    $('.mask').addClass('active');
+  });
+
   function closeModal() {
     $('.mask').removeClass('active');
   }
