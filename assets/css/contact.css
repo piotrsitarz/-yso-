@@ -64,7 +64,7 @@
 }
 
 .contact__description--nowrap {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .contact__wrapper {
@@ -169,15 +169,22 @@
   border: 1px solid rgb(86, 86, 86);
   border-radius: 5px;
   margin-top: 25px;
+  padding-left: 12px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
 }
 
 .contact__input::placeholder {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(136, 136, 136);
   text-transform: uppercase;
   text-align: left;
-  padding-left: 12px;
+}
+
+textarea {
+  padding: 10px;
 }
 
 .contact__input--big {
@@ -185,9 +192,9 @@
   margin-bottom: 25px;
 }
 
-.contact__submit{
+.contact__submit {
   font-size: 20px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   background: rgb(251, 253, 250);
   font-weight: bold;
   text-transform: uppercase;
@@ -233,6 +240,14 @@ img.lazy-image.loaded {
   opacity: 1;
 }
 
+.logo__icon {
+  width: 25px;
+  height: 40px;
+  position: relative;
+  left: -35px;
+  top: -5px;
+}
+
 @media screen and (max-width: 1123px) {
   .contact__container {
     padding: 0 20px;
@@ -263,7 +278,7 @@ img.lazy-image.loaded {
     text-align: center;
   }
 
-  #googleMap  {
+  #googleMap {
     margin-top: 30px;
     width: 100%;
     max-width: none;
@@ -286,11 +301,11 @@ img.lazy-image.loaded {
   .contact__subtitle {
     text-align: center;
   }
-  
+
   .contact__description {
     text-align: center;
   }
-} 
+}
 
 @media screen and (max-width: 800px) {
   .contact__input {
@@ -304,13 +319,13 @@ img.lazy-image.loaded {
   .contact__title {
     text-align: center;
   }
-} 
+}
 
 @media screen and (max-width: 530px) {
   .contact__subtitle {
     text-align: left;
   }
-  
+
   .contact__description {
     text-align: left;
   }
@@ -335,4 +350,4 @@ img.lazy-image.loaded {
   .contact__submit {
     margin-top: 20px;
   }
-} 
+}

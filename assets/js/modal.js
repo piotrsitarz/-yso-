@@ -9,11 +9,20 @@ jQuery(function ($) {
     $('.mask').addClass('active');
   });
 
+  $('.open-modal-account').on('click', function () {
+    $('.mask--account').addClass('active');
+  });
+
   function closeModal() {
     $('.mask').removeClass('active');
+    $('.mask--account').removeClass('active');
   }
 
   $('.close, .mask').on('click', function () {
+    closeModal();
+  });
+
+  $('.close, .mask--account').on('click', function () {
     closeModal();
   });
 

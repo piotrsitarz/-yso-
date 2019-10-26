@@ -12,6 +12,10 @@
   margin: 35px auto 15px;
 }
 
+.header--small {
+  max-width: 1153px;
+}
+
 .header-search__container {
   display: flex;
   justify-content: space-between;
@@ -70,7 +74,7 @@
 
 .header-search__input-paragraph {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
   line-height: 1.2;
   text-transform: uppercase;
@@ -80,7 +84,7 @@
 .header-search__input-paragraph--price {
   text-transform: none;
   font-size: 30px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(234, 193, 45);
   line-height: 0.6;
   padding-top: 6px;
@@ -89,7 +93,7 @@
 .header-search__input-paragraph--all {
   background: white;
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
   line-height: 1.2;
   text-transform: none;
@@ -108,7 +112,6 @@
   width: 100%;
   font-size: 20px;
   font-family: 'Metropolis';
-  color: rgba(0, 0, 0, 0.302);
   font-style: italic;
   line-height: 0.9;
   border-style: solid;
@@ -119,6 +122,11 @@
   background-color: rgb(255, 255, 255);
   height: 46px;
   padding-left: 10px;
+  color: rgb(64, 64, 64);
+}
+
+.header-search__input::placeholder {
+  color: rgb(64, 64, 64);
 }
 
 .header-search__icon {
@@ -140,6 +148,11 @@
 .header-search__account-container {
   display: flex;
   position: relative;
+}
+
+.account__icon-wrapper--mobile,
+.header-basket__amount--mobile {
+  display: none;
 }
 
 .account__icon-wrapper {
@@ -173,7 +186,7 @@
 .account__icon {
   height: 45px;
   position: absolute;
-  left: 5px;
+  left: 8px;
   top: 11px;
   fill: white;
 }
@@ -191,6 +204,7 @@
   color: rgb(0, 0, 0);
   line-height: 1.059;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .account__paragraph:hover {
@@ -258,6 +272,15 @@
   margin-left: 5px;
 }
 
+.header-basket__icon {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.header-basket__icon--mobile {
+  display: none;
+}
+
 .header-products__title {
   font-size: 18px;
   font-family: 'Metropolis';
@@ -281,9 +304,10 @@
 
 .products-list__title {
   font-size: 18.423px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
   margin: 12px 0 3px;
+  font-weight: bold;
 }
 
 .products-list__line {
@@ -295,7 +319,7 @@
 
 .products-list__name {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
   margin-top: 15px;
 }
@@ -306,7 +330,7 @@
 
 .products-list--mobile__name {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: white;
   margin-top: 15px;
 }
@@ -329,6 +353,12 @@
   height: 360px;
   padding-left: 15px;
   min-width: 190px;
+}
+
+.products-list:nth-child(2) {
+  border-left: 1px solid #dcdbdd;
+  margin-top: 47px;
+  height: 225px;
 }
 
 .products-list--mobile .products-list:first-child {
@@ -367,26 +397,32 @@
 
 .header-basket__price {
   font-size: 20px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(234, 193, 45);
   line-height: 0.9;
 }
 
 .header-basket__order {
   font-size: 12px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(250, 250, 250);
   line-height: 1.5;
 }
 
 .header-basket__amount {
   background: rgb(234, 193, 45);
-  width: 20px;
   border-radius: 50%;
   text-align: center;
   position: relative;
   top: -15px;
   right: 5px;
+  font-family: 'Metropolis';
+  padding: 2px 5px
+}
+
+.logo {
+  position: relative;
+  left: -8px;
 }
 
 @media screen and (max-width: 1173px) {
@@ -394,8 +430,12 @@
     width: 40%;
   }
 
+  .logo {
+    margin-left: 10px;
+  }
+
   .header-search__account-container {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .header-bar__container {
@@ -407,7 +447,6 @@
     order: -1;
     margin-left: 0;
     margin-bottom: 20px;
-    margin-right: 10px;
     width: 180px;
   }
 
@@ -428,7 +467,6 @@
   .header-products__list {
     top: 61px;
   }
-
 }
 
 @media screen and (max-width: 880px) {
@@ -502,12 +540,11 @@
     width: 50%;
     margin-left: 30px;
   }
-
 }
 
 @media screen and (max-width: 850px) {
   .header-search__input-container {
-    width: 80%;
+    width: 100%;
     order: 3;
     margin: 20px auto 0;
   }
@@ -535,5 +572,46 @@
     width: 100%;
     align-items: center;
     margin: 0;
+  }
+
+  .header-basket__container {
+    display: none;
+  }
+
+  .account__text {
+    display: none;
+  }
+
+  .account__icon-wrapper--mobile,
+  .header-basket__icon {
+    display: block;
+  }
+
+  .account__icon-wrapper:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  .account__icon-wrapper:nth-child(2) {
+    margin-left: 20px;
+  }
+
+  .header-search__input-container {
+    width: 100%;
+  }
+
+  .header-basket__icon--mobile {
+    position: absolute;
+    left: 84px;
+    top: 20px;
+  }
+
+  .header-basket__amount {
+    top: 0;
+    right: 24px;
+    background: black;
+    color: white;
+    height: 20px;
+    padding: 2px 5px 0 5px;
+    display: inline;
   }
 }

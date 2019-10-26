@@ -6,9 +6,28 @@ jQuery(function ($) {
         const active = $(this).hasClass("slider__paragraph--active");
         if (!active) {
             const index = $(".slider__paragraph").index(this);
-            const imgSrc = `assets/images/slider/main/product-slider${index+1}.webp`
+            const imgSrc = `assets/images/slider/main/product-slider${index+1}.webp`;
 
             $('.slider__paragraph').each(function () {
+                const currentElement = $(this);
+                currentElement.removeClass('slider__paragraph--active');
+            });
+
+            $(this).addClass("slider__paragraph--active");
+
+            $(".slider__img").fadeOut(600, function () {
+                $(".slider__img").attr('src', imgSrc).fadeIn(600);
+            });
+        }
+    });
+
+    $('.slider__paragraph--dot').click(function () {
+        const active = $(this).hasClass("slider__paragraph--active");
+        if (!active) {
+            const index = $(".slider__paragraph--dot").index(this);
+            const imgSrc = `assets/images/slider/main/product-slider${index+1}.webp`;
+
+            $('.slider__paragraph--dot').each(function () {
                 const currentElement = $(this);
                 currentElement.removeClass('slider__paragraph--active');
             });

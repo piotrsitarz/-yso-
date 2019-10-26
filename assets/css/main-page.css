@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.slider__container--small {
+    max-width: 1153px;
+}
+
 .slider__img {
     width: 100%;
     height: auto;
@@ -10,9 +14,9 @@
 
 .slider__hr {
     background-image: linear-gradient(to right,
-            rgba(100, 100, 100, 0),
-            rgba(100, 100, 100, 1),
-            rgba(100, 100, 100, 0));
+            rgba(220, 220, 220, 0.3),
+            rgba(220, 220, 220, 1),
+            rgba(220, 220, 220, 0.3));
     width: 100%;
     height: 1px;
     margin-bottom: 75px;
@@ -41,6 +45,12 @@
 .slider__paragraph:hover {
     color: rgb(234, 193, 45);
     cursor: pointer;
+}
+
+.slider__paragraph--dot {
+    font-weight: bold;
+    font-size: 40px;
+    display: none;
 }
 
 .slider-products__title {
@@ -74,6 +84,7 @@
     background: white;
     border: 1px solid #dcdbdd;
     border-radius: 50%;
+    fill: #404040;
 }
 
 .slider-products__arrow:hover {
@@ -84,13 +95,13 @@
     font-size: 35px;
     font-family: "Metropolis";
     color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 .slider-products__container {
-    width: calc(100% + 40px);
     display: flex;
     position: relative;
-    left: -20px;
 }
 
 .slider-products__container--news {
@@ -105,7 +116,7 @@
     border: 1px solid #dcdbdd;
     text-align: center;
     flex: 1;
-    box-shadow: 0 0 3px #dcdbdd;
+    box-shadow: 0 0 8px #dcdbdd;
     position: relative;
 }
 
@@ -114,7 +125,7 @@
 }
 
 .slick-slide {
-    margin: 25px;
+    margin: 25px 10px;
 }
 
 .slider-product__discount {
@@ -127,6 +138,7 @@
     margin-left: -30px;
     left: 50%;
     z-index: 2;
+    font-family: "Metropolis";
 }
 
 .slider-product__image {
@@ -202,6 +214,7 @@
 
 .product-details__icon {
     width: 27px;
+    fill: #404040;
 }
 
 .product-details__divider {
@@ -288,5 +301,17 @@
     .slider__paragraph {
         flex-basis: 50%;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider__paragraph {
+        text-align: center;
+        display: none;
+        flex-basis: unset;
+    }
+
+    .slider__paragraph--dot {
+        display: flex;
     }
 }

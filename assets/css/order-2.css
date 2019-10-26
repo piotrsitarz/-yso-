@@ -41,11 +41,12 @@
   width: 510px;
   position: absolute;
   top: 17px;
+  background: linear-gradient(to right, #a8a8a8 0%, #a8a8a8 175px, #dcdbdd 175px, #dcdbdd 100%);
 }
 
 .step__icon {
   width: 38px;
-  fill: #1e1e1c;
+  fill: #404040;
 }
 
 .step__icon--active {
@@ -67,7 +68,7 @@
 }
 
 .order__button {
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Metropolis';
   color: rgb(255, 255, 255);
   line-height: 1.2;

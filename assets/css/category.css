@@ -18,8 +18,9 @@
 
 .category__paragraph {
   font-size: 16px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
+  line-height: 1.2;
 }
 
 .category__paragraph--amount {
@@ -29,7 +30,7 @@
 
 .category__paragraph--medium {
   font-size: 20px;
-  color: rgb(115, 115, 115);
+  color: black;
   padding-bottom: 15px;
   height: 40px;
 }
@@ -84,11 +85,18 @@
 .category__border {
   width: 230px;
   height: 2px;
-  background: linear-gradient(to right, #737373 0, #737373 50px, #d4d5d6 50px, #d4d5d6 230px);
+  background: linear-gradient(to right,
+      #737373 0,
+      #737373 50px,
+      #d4d5d6 50px,
+      #d4d5d6 230px);
 }
 
 .category__hr {
-  background-image: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 1), rgba(100, 100, 100, 0));
+  background-image: linear-gradient(to right,
+      rgba(100, 100, 100, 0),
+      rgba(100, 100, 100, 1),
+      rgba(100, 100, 100, 0));
   width: 100%;
   height: 1px;
   margin: 20px 0;
@@ -110,12 +118,16 @@
 .category__input--small {
   width: 87px;
   height: 35px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
+  text-align: center;
 }
 
 .category__input::placeholder,
 .register__option {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(136, 136, 136);
   text-transform: uppercase;
   text-align: center;
@@ -144,7 +156,7 @@
   flex-grow: 1;
   width: 10px;
   padding-left: 20px;
-  border-left: 1px solid #e8e8e8
+  border-left: 1px solid #e8e8e8;
 }
 
 .blog-articles__pagination {
@@ -171,6 +183,7 @@
 
 .pagination__icon {
   height: 30px;
+  fill: #404040;
 }
 
 .pagination__icon--arrow {
@@ -183,7 +196,7 @@
 
 .pagination__paragraph {
   font-size: 18px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
 }
 
@@ -246,6 +259,7 @@
   margin-left: -30px;
   left: 50%;
   z-index: 2;
+  font-family: 'Metropolis';
 }
 
 .product__image {
@@ -293,14 +307,14 @@
 
 .product__title {
   font-size: 21px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(0, 0, 0);
   text-align: center;
 }
 
 .product__description {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 5px;
@@ -321,6 +335,7 @@
 
 .product-details__icon {
   width: 27px;
+  fill: #404040;
 }
 
 .product-details__divider {
@@ -332,7 +347,7 @@
 
 .product-details__select {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(64, 64, 64);
   width: 130px;
   padding: 7px 10px;
@@ -341,7 +356,7 @@
   appearance: none;
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 }
 
 .product__price {
@@ -357,13 +372,13 @@
 
 .product__price {
   font-size: 35px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(234, 193, 45);
 }
 
 .product__price--old {
   font-size: 15px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(145, 145, 145);
   text-decoration: line-through;
 }
@@ -371,7 +386,7 @@
 .product__basket {
   display: flex;
   font-size: 18px;
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;

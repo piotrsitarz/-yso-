@@ -1,188 +1,192 @@
 .login__container {
-    max-width: 1173px;
-    margin: 50px auto 1300px;
-    display: flex;
-    justify-content: center;
+  max-width: 1173px;
+  margin: 50px auto 1300px;
+  display: flex;
+  justify-content: center;
 }
 
 .login__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
 }
 
 .login__column:nth-child(2) {
-    margin-left: 45px;
+  margin-left: 45px;
 }
 
 .login__column--right {
-    border-right: 1px solid #dcdbdd;
-    padding-right: 45px;
+  border-right: 1px solid #dcdbdd;
+  padding-right: 45px;
 }
 
 .login__title {
-    font-size: 30px;
-    font-family: "Metropolis";
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
-    margin-top: 20px;
+  font-size: 30px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .login__paragraph {
-    font-size: 11px;
-    font-family: "Metropolis";
-    color: rgb( 86, 86, 86 );
-    line-height: 1.636;
+  font-size: 12px;
+  font-family: 'Metropolis';
+  color: rgb(86, 86, 86);
+  line-height: 1.636;
 }
 
 .login__checkbox--container {
-    width: 100%;
-    display: flex;
-    margin: 15px 0 20px 10px;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  margin: 15px 0 20px 10px;
+  align-items: center;
 }
 
 .login__checkbox--container label {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .login__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
 }
 
 .login__input {
-    width: 290px;
-    height: 30px;
-    border: 1px solid rgb(86, 86, 86);
-    border-radius: 5px;
+  width: 290px;
+  height: 30px;
+  border: 1px solid rgb(86, 86, 86);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
+  padding-left: 10px;
 }
 
 .login__input:nth-child(1) {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .login__input:nth-child(2) {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .login__input::placeholder {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(136, 136, 136);
-    text-transform: uppercase;
-    padding-left: 10px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
+  text-transform: uppercase;
 }
 
 .login__button {
-    font-size: 20px;
-    font-family: "Metropolis";
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 290px;
-    height: 40px;
-    border: 2px solid rgb(234, 193, 45);
-    border-radius: 999px;
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(234, 193, 45);
-    margin-bottom: 10px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 290px;
+  height: 40px;
+  border: 2px solid rgb(234, 193, 45);
+  border-radius: 999px;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(234, 193, 45);
+  margin-bottom: 10px;
 }
 
 .login__button--margin {
-    margin: 22px 0;
+  margin: 22px 0;
 }
 
 .login__button:hover {
-    color: rgb(234, 193, 45);
-    background: white;
-    cursor: pointer;
+  color: rgb(234, 193, 45);
+  background: white;
+  cursor: pointer;
 }
 
 .login__tooltip {
-    position: relative;
+  position: relative;
 }
 
 .login__paragraph--tooltip:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .login__tooltip .bottom {
-    width: 260px;
-    top:30px;
-    left:50%;
-    transform:translate(-50%, 0);
-    padding:20px;
-    background-color:white;
-    font-weight:normal;
-    font-size:13px;
-    border-radius:8px;
-    position:absolute;
-    z-index:99999999;
-    box-sizing:border-box;
-    box-shadow:0 1px 8px rgba(0,0,0,0.5);
-    display:none;
+  width: 260px;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 20px;
+  background-color: white;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
 .login__tooltip:hover .bottom {
-    display:block;
+  display: block;
 }
 
 .login__tooltip .bottom i {
-    position:absolute;
-    bottom:100%;
-    left:50%;
-    margin-left:-12px;
-    width:24px;
-    height:12px;
-    overflow:hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
 }
 
 .login__tooltip .bottom i::after {
-    content:'';
-    position:absolute;
-    width:12px;
-    height:12px;
-    left:50%;
-    transform:translate(-50%,50%) rotate(45deg);
-    background-color:white;
-    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 .login__tooltip-list {
-    margin-top: 24px;
-    padding-left:20px;
+  margin-top: 24px;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 720px) {
-    .login__container {
-        padding: 0 20px;
-        flex-direction: column;
-    }
+  .login__container {
+    padding: 0 20px;
+    flex-direction: column;
+  }
 
-    .login__column {
-        width: 100%;
-    }
+  .login__column {
+    width: 100%;
+  }
 
-    .login__column:nth-child(2) {
-        margin-left: 0;
-    }
+  .login__column:nth-child(2) {
+    margin-left: 0;
+  }
 
-    .login__checkbox--container {
-        justify-content: center;
-    }
+  .login__checkbox--container {
+    justify-content: center;
+  }
 
-    .login__column--right {
-        border-right: none;
-        border-bottom: 1px solid #dcdbdd;
-        padding-right: 0;
-    }
+  .login__column--right {
+    border-right: none;
+    border-bottom: 1px solid #dcdbdd;
+    padding-right: 0;
+  }
 }

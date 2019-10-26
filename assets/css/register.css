@@ -1,211 +1,213 @@
 .register__container {
-    max-width: 1173px;
-    margin: 50px auto 1300px;
-    display: flex;
-    justify-content: center;
-    position: relative;
+  max-width: 1173px;
+  margin: 50px auto 1300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .register__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
 }
 
 .register__column:nth-child(2) {
-    margin-left: 35px;
-    margin-top: 145px;
+  margin-left: 35px;
+  margin-top: 145px;
 }
 
 .register__title {
-    font-size: 30px;
-    font-family: "Metropolis";
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
-    margin-top: 20px;
+  font-size: 30px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .register__subtitle {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(86, 86, 86);
-    line-height: 1.2;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(86, 86, 86);
+  line-height: 1.2;
 }
 
 .register__subtitle--top {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .register__paragraph {
-    font-size: 11px;
-    font-family: "Metropolis";
-    color: rgb(86, 86, 86);
-    line-height: 1.636;
+  font-size: 11px;
+  font-family: 'Metropolis';
+  color: rgb(86, 86, 86);
+  line-height: 1.636;
 }
 
 .register__paragraph--terms {
-    line-height: 1.385;
-    font-size: 13px;
-    margin-left: 5px;
+  line-height: 1.385;
+  font-size: 13px;
+  margin-left: 5px;
 }
 
 .register__paragraph--law {
-    font-size: 11px;
-    color: rgb(160, 159, 159);
-    line-height: 1.636;
+  font-size: 11px;
+  color: rgb(160, 159, 159);
+  line-height: 1.636;
 }
 
 .register__paragraph--regulations {
-    color: black;
-    border-bottom: 1px solid #dcdbdd;
+  color: black;
+  border-bottom: 1px solid #dcdbdd;
 }
 
 .register__paragraph--regulations:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .register__title--right,
 .register__paragraph--right {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .register__checkbox--container {
-    width: 100%;
-    display: flex;
-    margin-top: 15px;
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
 }
 
 .register__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    border-right: 1px solid #dcdbdd;
-    width: 100%;
-    padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  border-right: 1px solid #dcdbdd;
+  width: 100%;
+  padding-right: 25px;
 }
 
 .register__input {
-    width: 290px;
-    height: 30px;
-    border: 1px solid rgb(86, 86, 86);
-    border-radius: 5px;
-    margin: 10px 0;
+  width: 290px;
+  height: 30px;
+  border: 1px solid rgb(86, 86, 86);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
 }
 
 .register__form.register__input:nth-child(1) {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .register__input--small {
-    width: 72px;
-    height: 35px;
+  width: 72px;
+  height: 35px;
 }
 
 .register__input--medium {
-    width: 130px;
-    height: 35px;
-    margin: 0 5px;
+  width: 130px;
+  height: 35px;
+  margin: 0 5px;
 }
 
 .register__input::placeholder,
 .register__option {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(136, 136, 136);
-    text-transform: uppercase;
-    padding-left: 10px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
+  text-transform: uppercase;
 }
 
 .register__birth {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .register__button {
-    font-size: 20px;
-    font-family: "Metropolis";
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 290px;
-    height: 40px;
-    border: 2px solid rgb(234, 193, 45);
-    border-radius: 999px;
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(234, 193, 45);
-    margin-bottom: 10px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 290px;
+  height: 40px;
+  border: 2px solid rgb(234, 193, 45);
+  border-radius: 999px;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(234, 193, 45);
+  margin-bottom: 10px;
 }
 
 .register__button--margin {
-    margin: 22px 0;
+  margin: 22px 0;
 }
 
 .register__button--back {
-    color: rgb(234, 193, 45);
-    background: white;
-    width: 100px;
-    position: absolute;
-    height: 50px;
-    bottom: 22px;
-    left: 20px;
+  color: rgb(234, 193, 45);
+  background: white;
+  width: 100px;
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
 }
 
 .register__button:hover {
-    color: rgb(234, 193, 45);
-    background: white;
-    cursor: pointer;
+  color: rgb(234, 193, 45);
+  background: white;
+  cursor: pointer;
 }
 
 .register__button--back:hover {
-    background: rgb(234, 193, 45);
-    color: white;
-    cursor: pointer;
+  background: rgb(234, 193, 45);
+  color: white;
+  cursor: pointer;
 }
 
 .register__image {
-    width: 292px;
-    height: 73px;
-    margin: 10px 0 18px;
+  width: 292px;
+  height: 73px;
+  margin: 10px 0 18px;
 }
 
 .img.lazy-image {
-    opacity: 0.1;
-    will-change: opacity;
-    transition: all 0.3s;
+  opacity: 0.1;
+  will-change: opacity;
+  transition: all 0.3s;
 }
 
 img.lazy-image.loaded {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media screen and (max-width: 970px) {
-    .register__container {
-        padding: 0 20px;
-        flex-direction: column;
-    }
+  .register__container {
+    padding: 0 20px;
+    flex-direction: column;
+  }
 
-    .register__column {
-        width: 100%;
-    }
+  .register__column {
+    width: 100%;
+  }
 
-    .register__column:nth-child(2) {
-        margin: 40px 0 100px;
-    }
+  .register__column:nth-child(2) {
+    margin: 40px 0 100px;
+  }
 
-    .register__title--right,
-    .register__paragraph--right {
-        margin-right: 0;
-    }
+  .register__title--right,
+  .register__paragraph--right {
+    margin-right: 0;
+  }
 
-    .register__form {
-        padding-right: 0;
-        border: none;
-    }
+  .register__form {
+    padding-right: 0;
+    border: none;
+  }
 }

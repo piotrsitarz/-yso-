@@ -40,11 +40,11 @@
 }
 
 .about__icon {
-  height: 85px;
+  width: 190px;
 }
 
 .about__icon--opineo {
-  height: 60px;
+  width: 260px;
 }
 
 .about__images-container {
@@ -136,7 +136,7 @@
   opacity: 1;
 }
 
-.active + .modal {
+.active+.modal {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
