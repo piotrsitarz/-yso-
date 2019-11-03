@@ -3,6 +3,10 @@ jQuery(function ($) {
     var sidebarOption = $(e.target).closest('.sidebar__option').data('name');
     $(".panel__content").children().hide();
     $(`.content__${sidebarOption}`).css("display", "block");
+    if (sidebarOption !== "orders") {
+      $(".orders__container").css("display", "block");
+      $(".order-single__container").css("display", "none");
+    }
   });
 
   const {
@@ -11,9 +15,8 @@ jQuery(function ($) {
 
 
   if (innerWidth < 840) {
-    $(".sidebar__option").click(function () {
-      console.log('huehauea');
-      $(this).find(".toggle").toggle();
+    $(".sidebar__row").click(function (e) {
+      $(this).next().toggle();
     });
   }
 
@@ -68,6 +71,11 @@ jQuery(function ($) {
       $(this).closest('.content__icon-wrapper').find('.content__hexagon').css("stroke", "#d5d5d5");
       $(this).closest('.content__icon-wrapper').find('.content__icon').css("fill", "#b1b1b1");
     }
+  });
+
+  $(".orders-table__paragraph--button").click(function () {
+    $(".orders__container").css("display", "none");
+    $(".order-single__container").css("display", "block");
   });
 
 });
