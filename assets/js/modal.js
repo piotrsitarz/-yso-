@@ -11,6 +11,7 @@ jQuery(function ($) {
 
   $('.open-modal-account').on('click', function () {
     $('.mask--account').addClass('active');
+    console.log('hueahuea');
   });
 
   function closeModal() {

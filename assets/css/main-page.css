@@ -1,317 +1,327 @@
 .slider__container {
-    max-width: 1173px;
-    margin: 0 auto;
+  max-width: 1173px;
+  margin: 0 auto;
 }
 
 .slider__container--small {
-    max-width: 1153px;
+  max-width: 1153px;
 }
 
 .slider__img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .slider__hr {
-    background-image: linear-gradient(to right,
-            rgba(220, 220, 220, 0.3),
-            rgba(220, 220, 220, 1),
-            rgba(220, 220, 220, 0.3));
-    width: 100%;
-    height: 1px;
-    margin-bottom: 75px;
+  background-image: linear-gradient(to right,
+      rgba(220, 220, 220, 0.3),
+      rgba(220, 220, 220, 1),
+      rgba(220, 220, 220, 0.3));
+  width: 100%;
+  height: 1px;
+  margin-bottom: 75px;
 }
 
 .slider__products {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin: 10px 0;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
 .slider__paragraph {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(0, 0, 0);
-    line-height: 1.2;
-}
-
-.slider__paragraph--active {
-    color: rgb(234, 193, 45);
-}
-
-.slider__paragraph:hover {
-    color: rgb(234, 193, 45);
-    cursor: pointer;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
 }
 
 .slider__paragraph--dot {
-    font-weight: bold;
-    font-size: 40px;
-    display: none;
+  font-weight: bold;
+  font-size: 80px;
+  display: none;
+  color: #404040;
+  cursor: pointer;
+}
+
+.slider__paragraph--active {
+  color: rgb(234, 193, 45);
+}
+
+.slider__paragraph:hover {
+  color: rgb(234, 193, 45);
+  cursor: pointer;
 }
 
 .slider-products__title {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider-arrows__container {
-    display: flex;
-    width: 60px;
-    justify-content: space-between;
-    margin-right: 30px;
-    align-items: center;
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+  margin-right: 30px;
+  align-items: center;
 }
 
 .slider-products__arrow--left {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .slider-products__arrow--right path {
-    transform: translate(8px);
+  transform: translate(8px);
 }
 
 .slider-products__arrow--lef path {
-    transform: translate(-8px);
+  transform: translate(-8px);
 }
 
 .slider-products__arrow {
-    width: 25px;
-    height: 25px;
-    background: white;
-    border: 1px solid #dcdbdd;
-    border-radius: 50%;
-    fill: #404040;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 1px solid #dcdbdd;
+  border-radius: 50%;
+  fill: #404040;
 }
 
 .slider-products__arrow:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .slider-products__paragraph {
-    font-size: 35px;
-    font-family: "Metropolis";
-    color: rgb(0, 0, 0);
-    margin-left: 10px;
-    font-weight: bold;
+  font-size: 35px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  font-weight: 500;
 }
 
 .slider-products__container {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .slider-products__container--news {
-    margin-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .slider-products__container--bestsellers {
-    margin-bottom: 190px;
+  margin-bottom: 190px;
 }
 
 .slider-product__card {
-    border: 1px solid #dcdbdd;
-    text-align: center;
-    flex: 1;
-    box-shadow: 0 0 8px #dcdbdd;
-    position: relative;
+  border: 1px solid #dcdbdd;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 0 8px #dcdbdd;
+  position: relative;
 }
 
 .slider-product__card:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .slick-slide {
-    margin: 25px 10px;
+  margin: 25px 10px;
 }
 
 .slider-product__discount {
-    background: #378d20;
-    font-size: 16px;
-    line-height: 0.573;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    padding: 7px 13px;
-    margin-left: -30px;
-    left: 50%;
-    z-index: 2;
-    font-family: "Metropolis";
+  background: #378d20;
+  font-size: 16px;
+  line-height: 0.573;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 7px 13px;
+  margin-left: -30px;
+  left: 50%;
+  z-index: 2;
+  font-family: 'Metropolis';
 }
 
 .slider-product__image {
-    position: relative;
-    padding: 10px;
+  position: relative;
+  padding: 10px;
 }
 
 .slider-product__image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .slider-product__details {
-    display: flex;
-    flex-direction: column;
-    height: 60px;
-    border-bottom: 1px solid #ebebeb;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  border-bottom: 1px solid #ebebeb;
+  justify-content: center;
 }
 
 .slider-product__details-hover {
-    display: none;
-    justify-content: space-between;
-    margin: 0 10px;
+  display: none;
+  justify-content: space-between;
+  margin: 0 10px;
 }
 
 .slider-product__details--row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .slider-product__image-hover .slider-product__description,
 .slider-product__image-hover .slider-product__title {
-    color: white;
+  color: white;
 }
 
 .slider-product__image-hover .slider-product__title {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .slider-product__image-hover .product__price {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .slider-product__title {
-    font-size: 21px;
-    font-family: "Metropolis";
-    color: rgb(0, 0, 0);
-    text-align: center;
+  font-size: 21px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 .slider-product__description {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 5px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 5px;
 }
 
 .slider-product__details--show {
-    display: flex;
+  display: flex;
 }
 
 .product-details__icons {
-    height: 100%;
+  height: 100%;
 }
 
 .product-details__icons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .product-details__icon {
-    width: 27px;
-    fill: #404040;
+  width: 27px;
+  fill: #404040;
 }
 
 .product-details__divider {
-    height: 30px;
-    width: 1px;
-    background: #dcdbdd;
-    margin: 0 12px;
+  height: 30px;
+  width: 1px;
+  background: #dcdbdd;
+  margin: 0 12px;
 }
 
 .product-details__select {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(64, 64, 64);
-    width: 130px;
-    padding: 7px 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-position: calc(100% - 20px) center;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(64, 64, 64);
+  width: 130px;
+  padding: 7px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 }
 
-
 .slider-product__price {
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .slider-product__price--hovered {
-    background: rgb(234, 193, 45);
+  background: rgb(234, 193, 45);
 }
 
 .product__price {
-    font-size: 35px;
-    font-family: "Metropolis";
-    color: rgb(234, 193, 45);
+  font-size: 35px;
+  font-family: 'Metropolis';
+  color: rgb(234, 193, 45);
 }
 
 .product__price--old {
-    font-size: 15px;
-    font-family: "Metropolis";
-    color: rgb(145, 145, 145);
-    text-decoration: line-through;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(145, 145, 145);
+  text-decoration: line-through;
 }
 
 .product__basket {
-    display: flex;
-    font-size: 18px;
-    font-family: "Metropolis";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
+  display: flex;
+  font-size: 18px;
+  font-family: 'Metropolis';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .slider-product-price--hover {
-    display: none;
+  display: none;
 }
 
 .product__basket--show {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .product__basket-icon {
-    width: 40px;
-    fill: white;
-    display: flex;
+  width: 40px;
+  fill: white;
+  display: flex;
+}
+
+.product__basket-icon--medium {
+  width: 35px;
+  margin-right: 8px;
 }
 
 .slider-product__image-hover {
-    height: 100px;
-    position: absolute;
-    bottom: 10px;
-    width: calc(100% - 20px);
-    display: none;
-    background: rgba(0, 0, 0, 0.4);
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 750px) {
-    .slider__paragraph {
-        flex-basis: 50%;
-        text-align: center;
-    }
+  .slider__paragraph {
+    flex-basis: 50%;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .slider__paragraph {
-        text-align: center;
-        display: none;
-        flex-basis: unset;
-    }
+  .slider__paragraph {
+    text-align: center;
+    display: none;
+    flex-basis: unset;
+  }
 
-    .slider__paragraph--dot {
-        display: flex;
-    }
+  .slider__paragraph--dot {
+    display: flex;
+  }
+
+  .slider__products {
+    justify-content: center;
+  }
 }

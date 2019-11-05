@@ -130,6 +130,8 @@ textarea:focus {
   font-family: 'Metropolis';
   color: white;
   margin-bottom: 16px;
+  width: 100%;
+  cursor: pointer;
 }
 
 .footer-secondary__paragraph--description {
@@ -159,7 +161,7 @@ textarea:focus {
 
 .footer-secondary__icon--gap {
   position: relative;
-  top: -1px;
+  top: 3px;
   height: 41px;
 }
 
@@ -360,10 +362,6 @@ textarea:focus {
     flex-direction: column;
   }
 
-  .footer-secondary__text {
-    align-items: center;
-  }
-
   .footer-secondary__socials {
     display: flex;
     justify-content: center;
@@ -394,9 +392,22 @@ textarea:focus {
     margin: 10px 0;
     text-align: center;
   }
-}
 
-@media screen and (max-width: 500px) {
+  .footer-secondary__text {
+    position: relative;
+    width: 100%;
+  }
+
+  .footer-secondary__text>p:first-child:after {
+    content: '▼';
+    color: white;
+    font-size: 40px;
+    font-family: 'Metropolis';
+    top: -8px;
+    right: 0;
+    position: absolute;
+  }
+
   .footer-primary__line--second {
     display: none;
   }

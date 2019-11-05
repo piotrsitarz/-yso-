@@ -57,7 +57,7 @@
   font-family: "Metropolis";
   color: rgb(0, 0, 0);
   margin-left: 10px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .slider-products__container {
@@ -229,7 +229,7 @@
   font-size: 18px;
   font-family: "Metropolis";
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -372,7 +372,7 @@ img.lazy-image.loaded {
 .paragraph--big {
   color: #eac12d;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .paragraph--center {
@@ -380,7 +380,7 @@ img.lazy-image.loaded {
 }
 
 .paragraph--cost {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .paragraph--tab-tittle {
@@ -441,6 +441,33 @@ img.lazy-image.loaded {
   padding: 15px;
   background: #f4f3f3;
   margin: 15px 0;
+  position: relative;
+}
+
+.info__weight--more {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  display: none;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #dcdbdd;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.info__weight--more .weight__item {
+  margin-top: 32px;
+}
+
+.info__weight--more .weight__item:nth-child(1) {
+  margin-left: 10px;
 }
 
 .weight__image {
@@ -500,14 +527,19 @@ img.lazy-image.loaded {
   border: 2px solid rgb(234, 193, 45);
   border-radius: 999px;
   color: white;
-  text-transform: uppercase;
   background: rgb(234, 193, 45);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-weight: bold;
+  font-weight: 500;
   margin-right: 40px;
   margin-left: 17px;
+}
+
+.price__button--popup {
+  text-transform: none;
+  width: auto;
+  padding: 0 10px;
 }
 
 .price__button:hover {
@@ -664,6 +696,10 @@ ul.tabs li.current {
   fill: rgb(234, 193, 45);
 }
 
+.product__basket-icon--medium {
+  width: 35px;
+  margin-right: 8px;
+}
 
 .tab__opinions {
   width: calc(100% + 30px);
@@ -753,6 +789,243 @@ ul.tabs li.current {
   justify-content: space-between;
 }
 
+.input-arrows__container {
+  display: flex;
+  flex-direction: column;
+  height: 42px;
+  position: absolute;
+  right: 23px;
+  position: absolute;
+  right: 0;
+}
+
+.input-arrow {
+  width: 8px;
+  fill: rgb(97, 97, 97);
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.input-arrow-down {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.input-arrow__container {
+  height: 50%;
+  width: 40px;
+  display: flex;
+  border-left: 1px solid #e4e4e4;
+  padding-left: 10px;
+  position: relative;
+  left: 20px;
+  cursor: pointer;
+}
+
+.input-arrow-hr {
+  height: 1px;
+  background: #e4e4e4;
+  width: 31px;
+  position: relative;
+  left: 20px;
+}
+
+.input-number-container {
+  position: relative;
+  width: 87px;
+  display: flex;
+  padding-left: 50px;
+}
+
+.input-number-container input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-family: 'Metropolis';
+  color: rgb(97, 97, 97)
+}
+
+.no-products {
+  display: none;
+}
+
+.mask--account {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.modal--account {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  margin-left: -260px;
+  margin-top: -170px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  transform: translateY(45px);
+  padding: 10px;
+  background: #fff;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active+.modal--account {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  z-index: 9;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.create,
+.facture {
+  display: none;
+}
+
+.modal__content .order__title--bold {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.order__title {
+  font-size: 30px;
+  font-family: 'Metropolis';
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.order__title--bold {
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.order__subtitle {
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(86, 86, 86);
+  line-height: 1.2;
+}
+
+.order__subtitle--small {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.order__input {
+  width: 48%;
+  height: 30px;
+  border: 1px solid rgb(86, 86, 86);
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.order__input::placeholder {
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(136, 136, 136);
+  text-transform: uppercase;
+}
+
+.order__input--wide {
+  width: 100%;
+}
+
+.order__input--medium {
+  width: 170px;
+  padding-left: 20px;
+}
+
+.order__input--big {
+  width: 260px;
+  padding-left: 10px;
+}
+
+.modal__content .order__title--bold {
+  font-size: 23px;
+  font-family: "Metropolis";
+  color: rgb(64, 64, 64);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order__button {
+  font-size: 15px;
+  font-family: 'Metropolis';
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  border: 2px solid rgb(234, 193, 45);
+  border-radius: 999px;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(234, 193, 45);
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.order__button--m {
+  width: 260px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1173px) {
   .weight__image {
     margin-bottom: 2px;
@@ -840,6 +1113,11 @@ ul.tabs li.current {
   ul.tabs {
     justify-content: space-around;
   }
+
+  .modal--account {
+    width: 300px;
+    margin-left: -150px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -898,6 +1176,15 @@ ul.tabs li.current {
 
   .note__button {
     margin-top: 20px;
+  }
+
+  .input-number-container {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .price__paragraphs {
+    text-align: center;
   }
 }
 

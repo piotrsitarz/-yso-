@@ -78,4 +78,12 @@ jQuery(function ($) {
     $(".order-single__container").css("display", "block");
   });
 
+  $(".write-question").click(function () {
+    $(".write-question__container").slideToggle({
+      start: function () {
+        jQuery(this).css('display', 'flex');
+      }
+    });
+  });
+
 });

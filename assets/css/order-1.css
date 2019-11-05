@@ -435,6 +435,11 @@ textarea::placeholder {
   display: none;
 }
 
+.modal__content .order__title--bold {
+  font-weight: normal;
+  font-size: 30px;
+}
+
 @media screen and (max-width: 970px) {
   .order__container {
     padding: 0 20px;

@@ -306,7 +306,7 @@ img.lazy-image.loaded {
 }
 
 .header-basket__order:hover+.bottom {
-  display: block;
+  display: block !important;
 }
 
 .bottom i {
@@ -395,13 +395,70 @@ img.lazy-image.loaded {
 }
 
 .basket__paragraph--tooltip {
-  font-weight: bold;
-  color: black;
+  font-weight: 500;
+  color: rgb(97, 97, 97);
   font-size: 24px;
 }
 
 .basket__paragraph--medium {
   font-size: 18px;
+}
+
+.bottom .basket__button {
+  height: 40px;
+}
+
+.input-arrows__container {
+  display: flex;
+  flex-direction: column;
+  height: 42px;
+  position: absolute;
+  right: 23px;
+  position: absolute;
+  right: 0;
+}
+
+.input-arrow {
+  width: 8px;
+  fill: rgb(97, 97, 97);
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.input-arrow-down {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.input-arrow__container {
+  height: 50%;
+  width: 30px;
+  display: flex;
+  border-left: 1px solid #e4e4e4;
+  padding-left: 10px;
+  position: relative;
+  left: 14px;
+  cursor: pointer;
+}
+
+.input-arrow-hr {
+  height: 1px;
+  background: #e4e4e4;
+  width: 33px;
+  position: relative;
+  left: 14px;
+}
+
+.input-number-container {
+  position: relative;
+  width: 87px;
+  display: flex;
 }
 
 @media screen and (max-width: 1173px) {
